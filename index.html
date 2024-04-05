@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode and QR Code Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Barcode and QR Code Generator</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Barcode Generator</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="barcode-input">Enter Barcode Data:</label>
+                            <input type="text" class="form-control" id="barcode-input" placeholder="Enter barcode data">
+                        </div>
+                        <button class="btn btn-primary" onclick="generateBarcode()">Generate Barcode</button>
+                        <div class="mt-3">
+                            <svg id="barcode" ></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>QR Code Generator</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="qrcode-input">Enter QR Code Data:</label>
+                            <input type="text" class="form-control" id="qrcode-input" placeholder="Enter QR code data">
+                        </div>
+                        <button class="btn btn-primary" onclick="generateQRCode()">Generate QR Code</button>
+                        <div class="mt-3">
+                            <canvas id="qrcode"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript files -->
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+    <script src="script.js"></script> <!-- assuming you save your JavaScript code in a file named script.js -->
+</body>
+</html>
