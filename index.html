@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
     <title>Barcode and QR Code Generator</title>
-    <!-- Link to Bootstrap CSS -->
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Link to custom CSS (if any) -->
-    <link rel="stylesheet" href="style.css">
+
+    <!-- External CSS file for additional styling (if needed) -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1 class="text-center my-4">Barcode and QR Code Generator</h1>
+    <!-- Main container -->
+    <div class="container my-5">
+        <!-- Page title -->
+        <h1 class="text-center mb-5">Barcode and QR Code Generator</h1>
 
-        <!-- Barcode Generator Section -->
-        <section>
-            <h2>Barcode Generator</h2>
-            <div class="card">
-                <div class="card-body">
-                    <!-- TODO: Add an input field with id "barcode-input" for entering barcode data -->
-                    <!-- TODO: Add a button with id "generate-barcode-btn" to generate the barcode -->
-                    <!-- TODO: Add a div with id "barcode-display" to display the generated barcode -->
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Barcode Generator Section -->
+                <!-- Header for barcode generator -->
+                <!-- Body for barcode generator -->
+                <!-- Form group for barcode input -->
+                <!-- Input field for barcode data -->
+                <!-- Button to generate barcode -->
+                <!-- Container for displaying generated barcode -->
+                <!-- SVG element to render barcode -->
             </div>
-        </section>
+            <div class="col-md-6">
+                <!-- Card for QR code generator -->
+                <!-- Header for QR code generator -->
+                <!-- Body for QR code generator -->
+                <!-- Form group for QR code input -->
+                <!-- Input field for QR code data -->
+                <!-- Button to generate QR code -->
+                <!-- Container for displaying generated QR code -->
+                <!-- Canvas element to render QR code -->
 
-        <!-- QR Code Generator Section -->
-        <section>
-            <h2>QR Code Generator</h2>
-            <div class="card">
-                <div class="card-body">
-                    <!-- TODO: Add an input field with id "qrcode-input" for entering QR code data -->
-                    <!-- TODO: Add a button with id "generate-qrcode-btn" to generate the QR code -->
-                    <!-- TODO: Add a div with id "qrcode-display" to display the generated QR code -->
-                </div>
             </div>
-        </section>
+        </div>
     </div>
 
-    <!-- Link to JsBarcode library -->
+    <!-- External JavaScript files -->
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
-    <!-- Link to qrcode.js library -->
     <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
-    <!-- Link to custom JavaScript -->
+
+    <!-- External JavaScript file for custom script -->
     <script src="script.js"></script>
 </body>
+
 </html>
